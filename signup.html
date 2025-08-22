@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div class="flex flex-col justify-center items-center h-screen w-full bg-black">
+      <div class="text-center mb-10">
+        <h2 class="text-[48px] font-bold text-black">Welcome</h2>
+        <p class="text-white text-[18px]">
+          Sign up or log in to access your 
+        </p>
+        <p class="text-red-600 text-[2rem]">BURZKEED account</p>
+      </div>
+
+      <form class="bg-white shadow-lg w-[30%] rounded-lg p-4 h-[600px]">
+        <div class="mb-4">
+          <h1 class="text-xl font-bold">Create an account</h1>
+          <p class="text-gray-400 mt-3">
+            Enter your information to create a new BURZKEED account
+          </p>
+        </div>
+        <div class="flex flex-col mb-4 gap-3">
+          <label
+            for="full_name"
+            class="font-medium"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            placeholder="Full Name"
+            required
+            class="border border-gray-400 outline-none focus:ring-1 focus-ring-black px-3 py-2 rounded-md"
+            id="full_name"
+             />
+        </div>
+        <div class="flex flex-col mb-4 gap-3">
+          <label
+            for="email"
+            class="font-medium"
+            >Email</label
+          >
+          <input
+            type="email"
+            placeholder="Email"
+            required
+            class="border border-gray-400 outline-none focus:ring-1 focus-ring-black px-3 py-2 rounded-md"
+            id="email"
+          />
+        </div>
+        <div class="flex flex-col mb-4 gap-3">
+          <label
+            for="password"
+            class="font-medium"
+            >Password</label
+          >
+          <input
+            type="password"
+            placeholder="Password"
+            required
+            class="border border-gray-400 outline-none focus:ring-1 focus-ring-black px-3 py-2 rounded-md"
+            id="password"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="bg-red-600 w-full py-2 px-6 font-[18px] text-white rounded-lg mt-[3rem]"
+          id="signup_button"
+        >
+          Signup
+        </button>
+
+        <p class="text-gray-500 text-center mt-10">
+          Already have an account
+          <a
+            href="login.html"
+            class="text-red-600 font-medium underline cursor-pointer"
+            >Login</a
+          >
+        </p>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
